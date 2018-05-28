@@ -14,7 +14,7 @@ docker build -t mower_market:dev:dev -f Dockerfile.dev .
 docker run -it -p 8889:8888 -p 5000:5000 -p 6006:6006 --rm -v //c/Users/thilegall/Desktop/Projets/Xebia/mower_market:/root mower_market:dev jupyter notebook --allow-root
 ```
 
-*Finally access you Jupyter notebook at (in any browser) :
+*Finally, you can access your Jupyter notebook at (in any browser) :
 
 ```
 localhost:8889
