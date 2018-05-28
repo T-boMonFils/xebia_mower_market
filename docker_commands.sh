@@ -1,0 +1,1 @@
+docker run -it -p 8889:8888 -p 5000:5000 -p 6006:6006 --rm -v //c/Users/thilegall/Desktop/Projets/Xebia/mower_market:/root mower_market:dev jupyter notebook --allow-root
