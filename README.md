@@ -45,9 +45,9 @@ localhost:8889
                    |-scaler                 -> scaler of the data (if the model is not a scikitlearn model purpose) (empty)
                |-LOG      -> File where the logs will be written
                |-notebook -> File containing the notebooks
-                        |-data_explo.ipnb -> the exploration and cleaning notebook
-                        |-tests_scripts_crunching.ipnb -> test of crunching fucntion called as API + data modelling
-                        |-test_main.ipnb -> tests of the main function to call it as a script
+                        |-data_explo.ipnb               -> the exploration and cleaning notebook
+                        |-tests_scripts_crunching.ipnb  -> test of crunching fucntion called as API + data modelling
+                        |-test_main.ipnb                -> tests of the main function to call it as a script
                |-source   -> File containing the script rnning the project
                       |-main.py -> script used to run the main
                |-utils    -> File containing utility functions (empty)
