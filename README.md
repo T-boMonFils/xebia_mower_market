@@ -2,18 +2,29 @@
 This project is aimed at fulfilling the datascience exercice provided by Xebia 
 
 ## Using the repository
-*To build the docker type from within the repository:
+*To build the docker type from within the repository :
+
+'''
 docker build -t mower_market:dev:dev -f Dockerfile.dev .
+'''
 
-*Once built use to start the docker as in stance for Jyputer:
+*Once built use to start the docker as in stance for Jyputer :
+
+'''
 docker run -it -p 8889:8888 -p 5000:5000 -p 6006:6006 --rm -v //c/Users/thilegall/Desktop/Projets/Xebia/mower_market:/root mower_market:dev jupyter notebook --allow-root
+'''
 
-*Finally access you Jupyter notebook at (in any browser):
+*Finally access you Jupyter notebook at (in any browser) :
+
+'''
 localhost:8889
+'''
 
 ## Architecture
 
 #Filesystem |(dockerfilesystem)
+
+'''
 (/root)
     |-mower_mark
                |
@@ -40,3 +51,4 @@ localhost:8889
                |-source   -> File containing the script rnning the project
                       |-main.py -> script used to run the main
                |-utils    -> File containing utility functions (empty)
+'''
