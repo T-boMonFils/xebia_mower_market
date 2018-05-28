@@ -138,15 +138,15 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install git+https://github.com/fchollet/keras.git@${KERAS_VERSION}
 
 # Install OpenCV
-RUN git clone https://github.com/opencv/opencv.git /root/opencv && \
-	cd /root/opencv && \
-	mkdir build && \
-	cd build && \
-	cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON -DBUILD_NEW_PYTHON_SUPPORT=ON -DWITH_V4L=ON .. && \
-	make -j"$(nproc)"  && \
-	make install && \
-	ldconfig && \
-	echo 'ln /dev/null /dev/raw1394' >> ~/.bashrc
+#RUN git clone https://github.com/opencv/opencv.git /root/opencv && \
+#	cd /root/opencv && \
+#	mkdir build && \
+#	cd build && \
+#	cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON -DBUILD_NEW_PYTHON_SUPPORT=ON -DWITH_V4L=ON .. && \
+#	make -j"$(nproc)"  && \
+#	make install && \#
+#	ldconfig && \
+#	echo 'ln /dev/null /dev/raw1394' >> ~/.bashrc
 
 # Set up notebook config
 COPY jupyter_notebook_config.py /root/.jupyter/
