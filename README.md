@@ -22,7 +22,7 @@ localhost:8889
 
 ## Architecture
 
-#Filesystem |(dockerfilesystem)
+#Filesystem | (dockerfilesystem)
 
 ```
 (/root)
